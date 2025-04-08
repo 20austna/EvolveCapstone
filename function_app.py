@@ -34,11 +34,7 @@ def timer_trigger(myTimer: func.TimerRequest) -> None:
     YourName = 'Nathaniel'
     
     #Initialize a connection string and the name of the file you want to upload, along with the container you want to upload the file to
-<<<<<<< HEAD
     connection_string = os.getenv("CONNECT_STRING")
-=======
-    connection_string = os.getenv("CON_STRING")
->>>>>>> f1e032e (Initial commit)
     blob_name = f"{previous_datetime.strftime('%m%d%Y')}{YourName}Data.json"
     container_name = 'data-ingestion-capstone'
     #Upload the file to the blob storage
